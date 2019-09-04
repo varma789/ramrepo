@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title>base page</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    #name{
+        font-size: 25px;
+        color: darkblue;
+        font-family: cursive;
+        text-shadow: 2px 2px crimson;
+    }
+    #name1{
+        font-size: 30px;
+        color: red;
+        font-family: cursive;
+        text-shadow:2px 2px red;
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: purple;
+    }
+    li{
+        float:left;
+    }
+    li a{
+        display: block;
+        color: red;
+        text-decoration: none;
+        text-align: center;
+        padding: 15px 20px;
+        font-size: 20px;
+    }
+    .active{
+        background-color: purple;
+    }
+    li a:hover{
+        background-color: red;
+        color: blue;
+    }
+    .footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: red;
+        color: green;
+        text-align: center;
+    }
+    #h11{
+        font-size:50px ;
+        text-shadow: 5px 5px 5px green;
+        margin-top: -8px;
+
+    }
+    body{
+        background-color:springgreen;
+    }
+</style>
+
+
+
+<body>
+<nav>
+    <ul>
+        <li><a href="/home/" class="active">Home</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/courses/">Courses</a></li>
+        <li><a href="/feedback/">Feedback</a></li>
+        <li><a href="/team/">Our Team</a></li>
+        <li><a href="/gallery/">Gallery</a></li>
+    </ul>
+    <center>
+    <h1 id="h11">Welcome to Durgasoft</h1>
+    </center>
+    {% block content %}
+    {% endblock %}<br><br>
+
+
+
+    <footer class="footer">
+        <h1>Thank you all</h1>
+    </footer>
+</nav>
+</body>
+</html>
